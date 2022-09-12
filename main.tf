@@ -4,7 +4,7 @@ data "tfe_organization" "pettypiece" {
 }
 
 resource "tfe_workspace" "pettypiece-ca" {
-  name                  = "pettypiece.ca"
+  name                  = "pettypiece-ca"
   description           = "Creates infra for running the pettypiece.ca server"
   organization          = data.tfe_organization.pettypiece.name
   speculative_enabled   = true
